@@ -1,6 +1,6 @@
 # DSI - Capstone #1: Paint The Future.
 
-![img](http://i.imgur.com/paintcarelogo.png)
+![img]('paintcarelogo.png')
 
 
 ## What Is This Painting of Tomorrow?
