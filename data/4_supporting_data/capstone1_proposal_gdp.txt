@@ -1,0 +1,16 @@
+﻿Galvanize Project Proposal
+Capstone I.
+Author: Gordon D. Pisciotta
+Topic: Local Business Creating A New Industry
+Synopsis:
+	In the world of 2020 the call for going green has come to the forefront of nearly every industry with the consumer largely driving fundamental changes.  Many variables play part in this movement toward putting pressure on companies to shift the operations of their business.  One of the most obvious hurtles revolves around the cost of altering a company’s facilities, employee education, and company mentality.  With this in mind, I selected my capstone project to centralize around a local company that has opened the door on a whole industry that has yet to be built.
+
+	The company I selected is a local paint company with operations in Denver, CO and Seattle, WA.  What sets this company apart from any other in operation is how they operate in tandem with consumer sentiment, and recent legislation.  In July of 2015, Colorado passed a bill that is referred to as the Paint Care Act.  This bill established a non-profit organization currently operating over 11 states (CA, CO, CT, DC, ME, MN, NY, OR, RI, VT, WA), with several more states slated to vote on the measure in the coming years.  
+
+The Paint Care Act implements a small tax on the purchase of paint ($0.35/half pt, $0.75/ gal, $1.65/larger-than 1gal).  This program promotes consumers to recycle their unused paint by returning it to one of may local hardware/paint stores such as Ace Hardware, and Sherwin-Williams.  Once their return bins fill up, Paint Care uses the tax revenue and hire a service to pick up the unused-returned paint and dispose of it.  However how would you dispose of the paint, and cans?  The company I selected to conduct my capstone on has figured this out.  Their chief engineer has figured out a method to take old used paint and recycle it with 100% efficiency, and produce new mid-grade paint.  To do this the service company splits the payment they received from Paint Care to recycle of the paint, generating revenue for receiving their raw materials.  The company has only recently figured out this process and is in the midst of expanding their business in both directions, recycling paint, and producing/selling new paint.
+With one facility operational in Denver and their Washington facility to open the first of November this company is positioned to grow at an exponential level.
+
+    • Question: what is a reasonable forecast for the company’s growth potential?  What can be their market share? Optimal ration of recycling &  producing?
+    • DATA: I know an individual on the company’s board who has already provided me with the financials, production, sales, revenue, and historical data.
+    • M.V.P: determine spectrum for likelihood of outcomes on %-of-paint-sold vs returned for recycling, company’s market share potential, production optimization, and profitability.  
+    • M.V.P. +: determine scale-ability of the business factoring in new potential markets(states) and what operational capacity would be required to meet that demand and retain market share.
