@@ -21,6 +21,7 @@
     1. import data from jumbled csv / pdf into python
     2. clean code to observable dataframes
     3. cross coorelate comprable aspects for visual representation.
+    4. ![Time vs Day](images/paintcarelogo.png.png) 
 
   #### Had an Awkward Dataset to work with
     1. Oriented my focus toward comprehension of what was being represented by the numbers I did have.  
