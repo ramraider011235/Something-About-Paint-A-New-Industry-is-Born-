@@ -27,7 +27,7 @@ def imports():
         'states', 'total_cost', 'weekly_kpi', 'gs_pl_2015', 'gs_pl_2016', 'gs_pl_2017', 'gs_pl_2018'
     ]
     for r in range(len(csv_lst)):
-        data_df_lst.append(pd.read_csv('data/'+str(csv_lst[r])+'.csv'))
+        data_df_lst.append(pd.read_csv('/home/gordon/galvanize/capstones/capstone1/data/'+str(csv_lst[r])+'.csv'))
     return data_df_lst
         
 def clean():
@@ -75,7 +75,7 @@ ax.set_title('Paint Collection: Potential US Market.')
 plt.grid(which="major", linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/census_bar_potential_mkt.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/census_bar_potential_mkt.png')
 plt.show()
 
 
@@ -101,7 +101,7 @@ ax.set_title('PaintCare Historic Record: CO')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/cpaintcare_co_records.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/cpaintcare_co_records.png')
 plt.show()
 
 
@@ -133,7 +133,7 @@ ax.set_title('Company Collection Records: By State')
 plt.grid(color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/paint_collected_bar_states.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/paint_collected_bar_states.png')
 plt.show()
 
 
@@ -152,7 +152,7 @@ ax1.set_title('Company Collection Records: Total')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/paint_collected_bar_total.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/paint_collected_bar_total.png')
 plt.show()
 
 
@@ -171,7 +171,7 @@ ax2.set_title('Company Collection Records: States vs Total')
 plt.grid(True, which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/paint_collected_line_statesANDtotal.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/paint_collected_line_statesANDtotal.png')
 plt.show()
 
 
@@ -205,7 +205,7 @@ ax.set_title('Company Processing & Sales Records:')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/paintProcessed_line_processed_packaged_shipped.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/paintProcessed_line_processed_packaged_shipped.png')
 plt.show()
 
 
@@ -226,7 +226,7 @@ ax1.set_title('Company Paint Processing & Sales Records:')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/paintProcessed_bar_processed_packaged_shipped.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/paintProcessed_bar_processed_packaged_shipped.png')
 plt.show()
 
 ### ### ### ### ### ###   ### ### ### ### ### ###    ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
@@ -251,7 +251,7 @@ ax.set_title('Annual Profit Loss Statement:')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/profitLoss_bar_historical_cashFlow.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/profitLoss_bar_historical_cashFlow.png')
 plt.show()
 
 
@@ -282,7 +282,7 @@ ax.set_title('Current Operations: By State')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/proforma_bar_recycle_collect_produce_ByState.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/proforma_bar_recycle_collect_produce_ByState.png')
 plt.show()
 
 
@@ -343,7 +343,7 @@ ax.set_title('Company Income Sources: Recycling vs Production/Sales:')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/weeklyKPI_bar_income_recycle_vs_processed.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/weeklyKPI_bar_income_recycle_vs_processed.png')
 plt.show()
 
 
@@ -397,9 +397,9 @@ ax.set_title('Company Annual Financial Comparison:')
 plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
 sns.set(style='darkgrid', context='talk', palette='Dark2')
 plt.tight_layout()
-plt.savefig('images/annualReport_bar_2015_2018.png')
+plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/annualReport_bar_2015_2018.png')
 plt.show()
 
 
 
-### ### ### ### ### ###   ### ### ### ### ### ###    ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
+### ### ### ### ### ###   ### ### ### ### ### ###    ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ###
