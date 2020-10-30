@@ -3,10 +3,28 @@
 import pandas as pd
 import numpy as np 
 import json
+
 import matplotlib
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 matplotlib.rcParams.update({'font.size' : 16, 'font.family' : 'sans'})
+SMALL_SIZE = 13
+MEDIUM_SIZE = 18
+BIGGER_SIZE = 25
+plt.rc('font', size = SMALL_SIZE)          # controls default text sizes
+plt.rc('axes', titlesize = MEDIUM_SIZE)     # fontsize of the axes title
+plt.rc('axes', labelsize = MEDIUM_SIZE)    # fontsize of the x and y labels
+plt.rc('xtick', labelsize = SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('ytick', labelsize = SMALL_SIZE)    # fontsize of the tick labels
+plt.rc('legend', fontsize = SMALL_SIZE)    # legend fontsize
+plt.rc('figure', titlesize = BIGGER_SIZE)  # fontsize of the figure title
+
+font = {'family' : 'normal',
+        'weight' : 'bold'}
+matplotlib.rc('font', **font)
+
+plt.rc('axes', linewidth=2)
+
 import scipy as sp
 import scipy.stats as stats
 import seaborn as sns
@@ -18,7 +36,6 @@ warnings.filterwarnings('ignore')
 
 
 ### ### ### ### ### ###     Import datafiles via csv files & pandas:
-    
     
 def imports():
     data_df_lst = []
@@ -51,7 +68,6 @@ data = clean()
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
 
-
 def census():
     census = data[0][['year','total_pop']]
     census['total_pop'] = census['total_pop'].astype(float)
@@ -61,14 +77,19 @@ def census():
     census['Current_Company_Market_Share'] = census['EPA_Est_Paint_Collectable_By_PaintCare_per_gal'] * 0.4
     
     x = np.arange(len(census['EPA_Est_Leftover_Paint_per_gal']))
-    y = np.arange((census['EPA_Est_Leftover_Paint_per_gal'].max()), 500000)   
+    y = np.arange((census['EPA_Est_Leftover_Paint_per_gal'].max()), 500000)
+                        
     fig = plt.figure(figsize=(18, 9))
-    ax = fig.add_subplot(111, ylabel='Dollars:  (0.1 = $100,000,000)', xlabel = 'Date Range') 
+
+    ax = fig.add_subplot(111) 
     census[['EPA_Est_Leftover_Paint_per_gal', 'EPA_Est_Paint_Collectable_By_PaintCare_per_gal', 'Current_Company_Market_Share']].plot(kind = 'bar', ax=ax, width = 2)
+    
+    ax.set_ylabel('Dollars:  (0.1 = $100,000,000', fontweight='bold')
+    ax.set_xlabel('Date Range', fontweight='bold')
     ax.set_xticks(x)
-    ax.set_xticklabels(census['year'], rotation = 60, fontsize = 15)
+    ax.set_xticklabels(census['year'], rotation = 60, fontweight='bold')
     ax.set_yticks(y , [['EPA_Est_Leftover_Paint_per_gal', 'EPA_Est_Paint_Collectable_By_PaintCare_per_gal', 'Current_Company_Market_Share']])
-    ax.set_title('Paint Collection: Potential US Market.', fontsize = 22)
+    ax.set_title('Paint Collection: Potential US Market.', fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()    
@@ -77,29 +98,30 @@ def census():
 census()
 
 
- ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
+### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
 
 def paintcare():
     
     paintcare_co = data[1]
-    
     fig = plt.figure(figsize=(18, 9))
-    ax = fig.add_subplot(111, ylabel = 'Dollars in $10million') 
+
+    ax = fig.add_subplot(111) 
     paintcare_co[['2015', '2016', '2017', '2018', '2019']].plot(kind = 'bar',ax=ax, width = .75, align = 'edge')
+    
+    ax.set_ylabel('Gallons In Millions', fontweight='bold')
     ax.set_xticklabels(paintcare_co['co_record'], rotation = 30)
-    ax.set_title('PaintCare Historic Record: CO', fontsize = 22)
+    ax.set_title('PaintCare Historic Record: CO', fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     ax.axis('tight')
     plt.tight_layout()
     plt.savefig('/home/gordon/galvanize/capstones/capstone1/images/cpaintcare_co_records.png')
+    
     plt.show();
 paintcare()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
 
 def paintCollected():
     
@@ -116,12 +138,16 @@ def paintCollected():
     x = np.arange(len(paint_collected['CO']))
     y = np.arange(0, int(paint_collected['CO'].max()) + 250, 2000)
     fig = plt.figure(figsize=(18, 9))
-    ax = fig.add_subplot(111, ylabel = 'Company Paint Collected (gal)', xlabel = 'Weekly Report') 
+    
+    ax = fig.add_subplot(111) 
     paint_collected[['CO','WA', 'AZ']].plot(kind = 'bar', ax = ax, width = .8, align = 'edge')
+    
+    ax.set_ylabel('Company Paint Collected (gal)', fontweight='bold') 
+    ax.set_xlabel('Weekly Report', fontweight='bold')
     ax.set_xticks(x)
-    ax.set_xticklabels(paint_collected['Date'], rotation = 70)
+    ax.set_xticklabels(paint_collected['Date'], rotation = 70, fontweight='bold')
     ax.set_yticks(y)
-    ax.set_title('Company Collection Records: By State')
+    ax.set_title('Company Collection Records: By State', fontsize = 30, fontweight='bold')
     plt.grid(color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -132,10 +158,13 @@ def paintCollected():
     x1 = np.arange(len(paint_collected['Total_Collection']))
     y1 = np.arange(int(paint_collected['Total_Collection'].min()) - 500, int(paint_collected['Total_Collection'].max()) + 500, 1000)
     fig = plt.figure(figsize=(18, 9))
-    ax1 = fig.add_subplot(111, ylabel = 'Company Paint Collected (gal)', xlabel = 'Weekly Report') 
+    ax1 = fig.add_subplot(111) 
     paint_collected['Total_Collection'].plot(kind = 'bar', ax = ax1, width = 0.5, align = 'edge')
-    ax1.set_xticklabels(paint_collected['Date'], rotation = 70)
-    ax1.set_title('Company Collection Records: Total')
+    
+    ax.set_ylabel('Company Paint Collected (gal)', fontweight='bold')
+    ax.set_xlabel('Weekly Report', fontweight='bold')
+    ax1.set_xticklabels(paint_collected['Date'], rotation = 70, fontweight='bold')
+    ax1.set_title('Company Collection Records: Total', fontsize = 30, fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -146,12 +175,15 @@ def paintCollected():
     x2 = np.arange(len(paint_collected['Total_Collection']))
     y2 = np.arange(0, int(paint_collected['Total_Collection'].max()) + 250, 2000)
     fig = plt.figure(figsize=(18, 9))
-    ax2 = fig.add_subplot(111, ylabel = 'Company Paint Collected (gal)', xlabel = 'Weekly Report') 
+    ax2 = fig.add_subplot(111) 
     paint_collected[['CO', 'WA', 'AZ', 'Total_Collection']].plot(ax = ax2, linewidth=4.0)
+    
+    ax.set_ylabel('Company Paint Collected (gal)', fontweight='bold')
+    ax.set_xlabel('Weekly Report', fontweight='bold')
     ax2.set_xticks(x2)
     ax2.set_xticklabels(paint_collected['Date'], rotation = 70)
     ax2.set_yticks(y2)
-    ax2.set_title('Company Collection Records: States vs Total')
+    ax2.set_title('Company Collection Records: States vs Total', fontsize = 30)
     plt.grid(True, which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -161,7 +193,6 @@ paintCollected()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
 
 def paintProcessed():
     
@@ -179,12 +210,15 @@ def paintProcessed():
     x = np.arange(len(paint_processed['paint_shipped_gal']))
     y = np.arange(0, int(paint_processed['paint_shipped_gal'].max()) + 250, 2000)
     fig = plt.figure(figsize=(18,9))
-    ax = fig.add_subplot(111, ylabel = 'Volume (gal)',xlabel = 'Weekly Report') 
+    ax = fig.add_subplot(111) 
     paint_processed[['paint_processed_gal','paint_packaged_gal', 'paint_shipped_gal']].plot(ax = ax, linewidth=3.0)
+    
+    ax.set_ylabel('Volume (gal)', fontweight='bold')
+    ax.set_xlabel('Weekly Report', fontweight='bold')
     ax.set_xticks(x)
     ax.set_xticklabels(paint_processed['date'], rotation = 70)
     ax.set_yticks(y)
-    ax.set_title('Company Processing & Sales Records:')
+    ax.set_title('Company Processing & Sales Records:', fontsize = 30)
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -192,16 +226,20 @@ def paintProcessed():
     plt.show()
 
 
+
     x = np.arange(len(paint_processed['paint_shipped_gal']))
     y = np.arange(0, int(paint_processed['paint_shipped_gal'].max()) + 250, 2500)
     fig = plt.figure(figsize=(18,9))
-    ax1 = fig.add_subplot(111, ylabel = 'Volume (gal)',xlabel = 'Weekly Report') 
+    ax1 = fig.add_subplot(111) 
     paint_processed[[
         'paint_processed_gal', 'paint_packaged_gal','paint_shipped_gal']].plot(kind = 'bar',width = .75, align = 'edge', ax = ax1)
+    
+    ax1.set_ylabel('Volume (gal)',fontweight='bold') 
+    ax1.set_xlabel('Weekly Report', fontweight='bold')
     ax1.set_xticks(x)
     ax1.set_xticklabels(paint_processed['date'], rotation = 70)
     ax1.set_yticks(y)
-    ax1.set_title('Company Paint Processing & Sales Records:')
+    ax1.set_title('Company Paint Processing & Sales Records:', fontsize = 30, fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -212,22 +250,22 @@ paintProcessed()
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
 
-
 def profitLoss():
     
     profit_loss = data[4]
-
     x = np.arange(len(profit_loss['2018']))
     step = int((int(profit_loss['2017'].max()) - int(profit_loss['2018'].min())) / 10)
     y = np.arange(0, int(profit_loss['2018'].max()), step)
     fig = plt.figure(figsize=(18,9))
-    ax = fig.add_subplot(111, ylabel='Dollars $ In Millions', xlabel = 'Accounting Bucket') 
+    ax = fig.add_subplot(111) 
     profit_loss[['2017', '2018', '2019']].plot(kind='bar', ax = ax, width = .75, align = 'edge')
-
+    
+    ax.set_ylabel('Dollars $ In Millions', fontweight='bold')
+    ax.set_xlabel('Accounting Bucket', fontweight='bold')
     ax.set_xticks(x)
     ax.set_xticklabels(profit_loss['category'], rotation = 45)
     ax.set_yticks(y)
-    ax.set_title('Annual Profit Loss Statement:')
+    ax.set_title('Annual Profit Loss Statement:', fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -238,11 +276,9 @@ profitLoss()
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
 
-
 def proform():
 
     proforma = data[5].drop([2, 5, 6, 7, 8])
-    
     proforma.columns = ['state', 'population', 'total_sold', 'State_Total_Recycling', 'Company_Collection', 'Company_Produced']
     proforma = proforma.set_index('state').transpose()
     location = proforma.columns
@@ -252,10 +288,15 @@ def proform():
     x = np.arange(len(proforma['total_sold']))
     y = np.arange(0, 5250000, (5250000 / 10))
     fig = plt.figure(figsize=(18,9))
-    ax = fig.add_subplot(111, ylabel='Dollars $ In Millions', xlabel = 'Current Operations') 
+    ax = fig.add_subplot(111) 
     proforma[['State_Total_Recycling', 'Company_Collection', 'Company_Produced']].plot(kind = 'bar', ax = ax, width = .85, align = 'edge')
+    
+    ax.set_ylabel('Dollars $ In Millions', fontweight='bold')
+    ax.set_xlabel('Current Operations', fontweight='bold')
+    ax.set_xticks(x)
     ax.set_xticklabels(proforma['location'], rotation = 45)
-    ax.set_title('Current Operations: By State')
+    ax.set_yticks(y)
+    ax.set_title('Current Operations: By State', fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -265,7 +306,6 @@ proform()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
 
 def states():
     
@@ -282,22 +322,18 @@ def states():
     ])
     s['Rank'] = np.arange(len(s['state']))
     s.set_index('Rank', inplace = True)
-    print(s)
 states()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
 
-
 def totalCost():
     total_cost = data[7]
     total_cost.set_index('category').transpose()
-    print(total_cost)
 totalCost()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
 
 def weeklyKPI():
 
@@ -312,10 +348,13 @@ def weeklyKPI():
 
 
     fig = plt.figure(figsize=(18,9))
-    ax = fig.add_subplot(111, ylabel = 'Volume (gal)',xlabel = 'Weekly Report') 
+    ax = fig.add_subplot(111) 
     weekly_kpi[['recyclingincome','productincome']].plot(kind = 'bar', ax = ax, width = .75, align = 'center')
+    
+    ax.set_ylabel('Volume (gal)', fontweight='bold')
+    ax.set_xlabel('Weekly Report', fontweight='bold')
     ax.set_xticklabels(weekly_kpi['date'], rotation = 60)
-    ax.set_title('Company Income Sources: Recycling vs Production/Sales:')
+    ax.set_title('Company Income Sources: Recycling vs Production/Sales:',fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -325,7 +364,6 @@ weeklyKPI()
 
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ### 
-
 
 def historic():
 
@@ -359,10 +397,13 @@ def historic():
     y = np.arange(0, 3000000 , 100000)
     fig = plt.figure(figsize=(18,9))
     labels = df.columns[1:]
-    ax = fig.add_subplot(111, ylabel = 'Dollars $ In Millions', xlabel = 'Annual Report') 
+    ax = fig.add_subplot(111) 
     df[['2015','2016', '2017','2018']].plot(kind = 'bar', ax = ax, width = .5, align = 'center')
+    
+    ax.set_ylabel('Dollars $ In Millions', fontweight='bold')
+    ax.set_xlabel('Annual Report', fontweight='bold')
     ax.set_xticklabels(df['category'], rotation = 60)
-    ax.set_title('Company Annual Financial Comparison:')
+    ax.set_title('Company Annual Financial Comparison:', fontsize = 30, fontweight='bold')
     plt.grid(which="major", color='k', linestyle='-.', linewidth=0.5)
     sns.set(style='darkgrid', context='talk', palette='Dark2')
     plt.tight_layout()
@@ -370,5 +411,6 @@ def historic():
     plt.show();
 historic()
 
+print('\n * * * * * CONGRATULATIONS! YOUR .PY SCRIPT HAS COMPLETED AND PROBABLY DOESNT NOT MOST LIKELY WONT HAVE ERRORS... * * * * * \n')
 
 ### ### ### ### ### ###    ### ### ### ### ### ###     ### ### ### ### ### ###
