@@ -1,8 +1,10 @@
 # DSI - Capstone I. Paint The Future 
 
-### Paint Stewardship Program: Financial Assessment Of Individual Entity
+## Paint Stewardship Program: Financial Assessment Of Individual Entity
 
-##### Authored By: Gordon D. Pisciotta
+### Authored By: Gordon D. Pisciotta
+
+#### Unpaid Sponsorship: Chun Wu's Project and Oil For America (not an actual sponsor or entity)
 
 ![img](images/paintcarelogo.png)
 
