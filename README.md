@@ -194,9 +194,7 @@
 
 1. If a coloradian is selected at random, What is the probability they will have unused paint?
 
-2. 1. If a coloradian is selected at random, What is the probability they will have unused paint? 
-
-have returned any paint for recycling?
+2. 1. If a coloradian is selected at random, What is the probability they will have unused paint and return it for recycling?
   
     
   
