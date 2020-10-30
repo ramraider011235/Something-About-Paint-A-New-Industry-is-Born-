@@ -197,6 +197,10 @@
 #### 3. If able to work with the company to formulate some sort of regularly generated reporting system and narrow down accurate figures of their business I believe there is significant value to be added through focused forcasting.
 
 
+# TO RUN THIS PROJECT YOURSELF:
+### 1. Open the paint.py file on your choice of editor.
+### 2. run the paint.py - it will run the entire project as one continuous sequence and print out a congratulations message when completed.
+
 # References:
 
 * https://github.com/ramraider011235/capstone1/blob/main/data/4_supporting_data/co-annual-report-2019.pdf
