@@ -184,6 +184,20 @@
 * Very little competition to their business model as they are the only name in town currently capable of generating revenue when receiving their raw materials and again when they sell their recycled paint
 
 * The green conscious consumer is pushing All industries to explore green/alternative methods within their business operations.  This company has modeled their entire identity to capture consumer sentiment.
+
+
+# Room to Grow:
+
+### generate a series of statistical models:
+
+##### Applying the EPA's figures that 90% of coloradians live within 15 minutes of a drop off location, and historically 10% of paint goes unused and of that paint 10% is returned for collection.
+
+1. If a coloradian is selected at random, What is the probability they will have unused paint?
+
+2. 1. If a coloradian is selected at random, What is the probability they will have unused paint? 
+
+have returned any paint for recycling?
+  
     
   
 # Forward Looking Approach
