@@ -1,72 +1,31 @@
-# DSI - Capstone I. Paint The Future 
+Reviewing The Paint Care Act Paint The Future 
 
 ## Paint Stewardship Program: Financial Assessment Of Individual Entity
 
 ### Authored By: Gordon D. Pisciotta
-
-#### Unpaid Sponsorship: Chun Wu's Project and Oil For America (not an actual sponsor or entity)
 
 ![img](images/paintcarelogo.png)
 
 
 
 ## Define The Canvas: The Paint Stewardship Program
+  * After a comprehensive 10 year government study centralized around the paint industry there was a national program established to solve the issues of recycling of unused paint in America & eliminate Waste pileup in landfills.
   
-#### 1. National Goverment Implemented Program - established Non-Profit Organization - PaintCare Inc. (PaintCare.org)
-
-#### 2. Focus is to minimize waste products ending up at landfills
-
-#### 3. Comprehensive 10 year study to determine benefits and feasibility
+  Non-Profit Organization of  PaintCare Inc. (PaintCare.org)
     
 
-### Report Focus & Conclusions:
-
-#### 1. Percent of Population within reasonable distance (15 minute drive) from a drop off locations
-
-
+# Report Focus & Conclusions:
+* Percent of Population within reasonable distance (15 minute drive) from a drop off locations
 * 90% of Coloradoians within threshold
-    
-
-#### 2. Paint Manufacturer / Retailers / Paint Collection Network
-
-
 * 172 initial locations optimized within Colorado
-
 
 ![img](images/co_report.png)
 
+# Analysis of Program:
+* Obtain & analyze operational records 
+* Identify and identify the variable business components
 
-
-## Preliminary Thoughts & Directive:
-
-### Initial intent was to focus on 1 prominent entity operating within this Program and conduct a comprehensive analysis of their operations at current and historic levels to then gague their likelihood of future success.
-
-* Obtain & analyze detailed operational records 
-    
-* Identify the variable business components & capture these aspects in various visualizations
-    
-
-### This became a significant obstacle when the data was delivered to me in hand created spreadsheets.
-
-##### For example when I say hand created spreadsheets what I mean is the individual manually inputted every cell which resulted in instances such as: 
-
-
-![img](images/example.png)    
-
-    
-![img](images/source_data_issue.png)
-
-
-
-## Course Alteration & Re-Orientation:
-
-
-* Quickly realized the focus of my project shifting to accomodate for the data source & structure
-    
-    
 ## New Project Goals:
-
-
 #### 1. Portray the current standing of the business in relation to:
 
 * Their industry
