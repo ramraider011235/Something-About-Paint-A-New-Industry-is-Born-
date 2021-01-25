@@ -1,54 +1,40 @@
 # The Paint Care Act Paint
-## A Probabilistic Financial Review 
-### Authored By: Gordon D. Pisciotta
+### A Probabilistic Financial Review 
+#####    Created By,
+##### Gordon D. Pisciotta
 
 ![img](images/paintcarelogo.png)
 
 
 
-## Define The Canvas: The Paint Stewardship Program
+# Define The Canvas: The Paint Stewardship Program
   * After a comprehensive 10 year government study centralized around the paint industry there was a national program established to solve the issues of recycling of unused paint in America & eliminate Waste pileup in landfills.
-  
-  Non-Profit Organization of  PaintCare Inc. (PaintCare.org)
-    
-
-# Report Focus & Conclusions:
+  * PaintCare Inc. (PaintCare.org) crfeated non-profit organization (NPO) to facilitate collection & recycling ~ created company being reviewed    
+### Starting Details
 * Percent of Population within reasonable distance (15 minute drive) from a drop off locations
 * 90% of Coloradoians within threshold
 * 172 initial locations optimized within Colorado
 
-# Analysis of Program:
-* Obtain & analyze operational records 
-* Identify and identify the variable business components
-
-## New Project Goals:
-## Portray the current standing of the business in relation to:
-* Their Historic Performance
-* Current Market Share
-* Current Levels of Paint (Sold, Leftover, Collected-By-PaintCare, Reused, Processed, & Re-Sold)
-* Identify trends within the key components of the business & capture their variability over time  
-    
+# Focus of Project:
+* Obtain & analyze operational records of new industry & an individual (NPO) within 
+* Identify and vizualize the variable business components
+* generate statistical functions to assess the probability of success for the company/industry
+  * Their Historic Performance
+  * Current Market Share
+  * Current Levels of Paint (Sold, Leftover, Collected-By-PaintCare, Reused, Processed, & Re-Sold)
+  * Identify trends within the key components of the business & capture their variability over time  
 
 
 
-## Exploratory Analysis:
-#### 1. Applying EPA reported figures I wanted to observe the current market composition (Market-Share, Potential Market)
-    
+# Exploratory Analysis:
+### Applying EPA reported figures to observe current market composition (Market-Share, Potential Market)
+ 
 ![img](images/census_bar_potential_mkt1.png)
 
 
 
-
-
-
-
-
-
-
-
-#### historical paint collection by State & Total
+# historical paint collection by State & Total
 ![img](images/paint_collected_bar_states1.png)
-
 * In the above graph we can see a bar chart comparison between the 3 states within which the company has operations within
 
 ![img](images/paint_collected_bar_total1.png)
@@ -60,7 +46,7 @@
 
 
 
-#### In the 2 graphs below I have generated a line and bar graph plot to display 3 of the company's vital operations over the same historical time table:
+# Display 3 of the company's vital operations over the same historical time table:
 * After reviewing the company's 1st leg of business (paint collection for recycling)  I reviewed the company's ability to turn the collected leftover paint into new paint.
   * processing of new paint
   * packaging of the processed paint
@@ -72,29 +58,21 @@
 ![img](images/cpaintcare_co_records1.png)
   
 
-#### 5. After exploring the main operational aspects of the company (paint recycled, paint processed, paint packaged, and paint sold/shipped), I turned my focus toward the company's financial records.
-
+# Financial Standing & Future Outlook
 * The collection of financial data I had access to was incomplete and required being pieced together from several Hand-Made spreadsheets.
-
 * Even after wrangling the data together there were noticable missing aspects that presented issues when attempting to formulate the answer to the question, "How has the company been doing the past few years"
 
-#### This program and company are both relatively new with both being established within the last 5 years 
-
+### This program and company are both relatively new with both being established within the last 5 years 
 * The program is still maturing and the volumes of leftover/unused paint are still extremely volatile
-
 * The company also had to incur significant upstart costs that weighed heavily on their financial status such as machinery, facility, and manufacturing procedure
 
-#### Their ability to reuse & repurpuse the paint they collect from recycling into new mid-grade paint is a new operational feature 
-
+### Their ability to reuse & repurpuse the paint they collect from recycling into new mid-grade paint is a new operational feature 
 * Previously they were manufacturing their own paint from green-conscious materials but not converting material collected from the recycling program
-
 *  Their lead engineer responsible for this concept (also responsible for the "creative" spreadsheets) is very efficient at being an engineer and as a result the company is still getting up to speed operationally
 
 
 
-
-
-### Reviewing the current operations of the company (Colorado & Washington)
+# Reviewing the current company operations ~ (Colorado & Washington)
 * What is very apparent observing this graph is the market share the company currently holds as a portion of the total recycled paint within the respective states
   * It is important to note that California has passed this measure and is expected to have the program fully implemented in 2021.
   * California also has a massive potential market more than double their combined existing operations.
@@ -107,16 +85,12 @@
     
 
 
-
-    
-  
 # Main Takeaways:
-###  Currently the company has only recently began to explore avenues to market and sell their recycled paint as their flagship product.
-
 * Large Variability in sources of income and operational capability of the business
 * Significant upside potential to maintain market share & expand into various new markets (states) that will be bringing the program online in the coming years.
 * Very little competition to their business model as they are the only name in town currently capable of generating revenue when receiving their raw materials and again when they sell their recycled paint
 * The green conscious consumer is pushing All industries to explore green/alternative methods within their business operations.  This company has modeled their entire identity to capture consumer sentiment.
+
 
 
 # Room to Grow: generate a series of statistical models:
