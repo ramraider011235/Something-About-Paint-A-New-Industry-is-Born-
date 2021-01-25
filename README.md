@@ -1,7 +1,5 @@
-Reviewing The Paint Care Act Paint The Future 
-
-## Paint Stewardship Program: Financial Assessment Of Individual Entity
-
+# The Paint Care Act Paint
+## A Probabilistic Financial Review 
 ### Authored By: Gordon D. Pisciotta
 
 ![img](images/paintcarelogo.png)
