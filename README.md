@@ -47,28 +47,25 @@
 
 
 #### historical paint collection by State & Total
-    
 ![img](images/paint_collected_bar_states1.png)
 
-#### In the above graph we can see a bar chart comparison between the 3 states within which the company has operations within
+* In the above graph we can see a bar chart comparison between the 3 states within which the company has operations within
 
 ![img](images/paint_collected_bar_total1.png)
-
-#### Above we have a representation of the Total Collection in gallons by the company across all states
+* Above we have a representation of the Total Collection in gallons by the company across all states
 
 ![img](images/paint_collected_line_statesANDtotal1.png)
+* In this 3rd visual we can see the volume each collection site(state) accounts toward the total gallons of paint collected by the company
 
-#### In this 3rd visual we can see the volume each collection site(state) accounts toward the total gallons of paint collected by the company
 
 
-### 4. After reviewing the company's 1st leg of business (paint collection for recycling)  I reviewed the company's ability to turn the collected leftover paint into new paint.
 
 #### In the 2 graphs below I have generated a line and bar graph plot to display 3 of the company's vital operations over the same historical time table:
-
-* processing of new paint
-* packaging of the processed paint
-* paint sold that has been shipped out for delivery
-* paint by volume 
+* After reviewing the company's 1st leg of business (paint collection for recycling)  I reviewed the company's ability to turn the collected leftover paint into new paint.
+  * processing of new paint
+  * packaging of the processed paint
+  * paint sold that has been shipped out for delivery
+  * paint by volume 
    
 ![img](images/paintProcessed_line_processed_packaged_shipped1.png)
 ![img](images/paintProcessed_bar_processed_packaged_shipped1.png)
@@ -94,64 +91,46 @@
 *  Their lead engineer responsible for this concept (also responsible for the "creative" spreadsheets) is very efficient at being an engineer and as a result the company is still getting up to speed operationally
 
 
-![img](images/profitLoss_bar_historical_cashFlow1.png)
 
 
-#### 6. Next I narrowed and constructed a plot of their two current facilities that are both operating in full capacity to both collect leftover paint and produce/sell recycled paint. (Colorado & Washington)
 
+### Reviewing the current operations of the company (Colorado & Washington)
 * What is very apparent observing this graph is the market share the company currently holds as a portion of the total recycled paint within the respective states
+  * It is important to note that California has passed this measure and is expected to have the program fully implemented in 2021.
+  * California also has a massive potential market more than double their combined existing operations.
 
-* As was the same with the previous data sets they included aspects that do not completely corespond with the surrounding data set, and that is why we also have California represented here.
+![img](images/profitLoss_bar_historical_cashFlow1.png)    
+![img](images/proforma_bar_recycle_collect_produce_ByState1.png)\
 
-* It is important to note that California has passed this measure and is expected to have the program fully implemented in 2021.
-
-* California also has a massive potential market more than double their combined existing operations.
-
-    
-![img](images/proforma_bar_recycle_collect_produce_ByState1.png)
-
-
-#### 7. Finally I structured a plot of the 2 most important aspects of the business, how they generate revenue.
-    
+* Finally I structured a plot of the 2 most important aspects of the business, how they generate revenue.
 ![img](images/weeklyKPI_bar_income_recycle_vs_processed1.png)
+    
+
 
 
     
   
 # Main Takeaways:
-
-####  Currently the company has only recently began to explore avenues to market and sell their recycled paint as their flagship product.
+###  Currently the company has only recently began to explore avenues to market and sell their recycled paint as their flagship product.
 
 * Large Variability in sources of income and operational capability of the business
-
-* Significant upside potential to maintain market share and expand into the various new markets (states) that will be bringing the program online in the coming years.
-
+* Significant upside potential to maintain market share & expand into various new markets (states) that will be bringing the program online in the coming years.
 * Very little competition to their business model as they are the only name in town currently capable of generating revenue when receiving their raw materials and again when they sell their recycled paint
-
 * The green conscious consumer is pushing All industries to explore green/alternative methods within their business operations.  This company has modeled their entire identity to capture consumer sentiment.
 
 
-# Room to Grow:
-
-### generate a series of statistical models:
-
-##### Applying the EPA's figures that 90% of coloradians live within 15 minutes of a drop off location, and historically 10% of paint goes unused and of that paint 10% is returned for collection.
-
-1. If a coloradian is selected at random, What is the probability they will have unused paint?
-
-2. If a coloradian is selected at random, What is the probability they will have unused paint and return it for recycling?
+# Room to Grow: generate a series of statistical models:
+* Applying the EPA's figures that 90% of coloradians live within 15 minutes of a drop off location, and historically 10% of paint goes unused and of that paint 10% is returned for collection.
+* If a coloradian is selected at random, What is the probability they will have unused paint?
+* If a coloradian is selected at random, What is the probability they will have unused paint and return it for recycling?
   
     
   
 # Forward Looking Approach
-    
-#### 1. I would like to work with the company to generate complete standarized reports that detail their vital areas of operation such as collected leftover paint, paint converted, produced, and packaged, and of course their sales figures
-
-#### 2. While cleaning the company documents into a form that could generate these plots and figures several accounting aspects caught my eye.
-
+* I would like to work with the company to generate complete standarized reports that detail their vital areas of operation such as collected leftover paint, paint converted, produced, and packaged, and of course their sales figures
+* While cleaning the company documents into a form that could generate these plots and figures several accounting aspects caught my eye.
 * There appeared to be obscure accounting buckets populated with unknown expenses that could potentially be more accurately itimized, tracked, and minimized to increase profitability
-
-#### 3. If able to work with the company to formulate some sort of regularly generated reporting system and narrow down accurate figures of their business I believe there is significant value to be added through focused forcasting.
+* If able to work with the company to formulate some sort of regularly generated reporting system and narrow down accurate figures of their business I believe there is significant value to be added through focused forcasting.
 
 
 # TO RUN THIS PROJECT YOURSELF:
@@ -161,11 +140,6 @@
 # References:
 
 * https://github.com/ramraider011235/capstone1/blob/main/data/4_supporting_data/co-annual-report-2019.pdf
-
 * https://github.com/ramraider011235/capstone1/blob/main/data/4_supporting_data/Colorado%20Architectural%20Paint%20Stewardship%20Program%20Plan.pdf
-
 * https://github.com/ramraider011235/capstone1/blob/main/data/4_supporting_data/epr-achievements-paint.pdf
-
 * https://github.com/ramraider011235/capstone1/blob/main/data/4_supporting_data/xx-factsheet-transfer-station.pdf
-
-
