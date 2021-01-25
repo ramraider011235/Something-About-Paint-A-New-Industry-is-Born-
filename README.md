@@ -17,49 +17,36 @@
 * 90% of Coloradoians within threshold
 * 172 initial locations optimized within Colorado
 
-![img](images/co_report.png)
-
 # Analysis of Program:
 * Obtain & analyze operational records 
 * Identify and identify the variable business components
 
 ## New Project Goals:
-#### 1. Portray the current standing of the business in relation to:
-
-* Their industry
-
+## Portray the current standing of the business in relation to:
 * Their Historic Performance
-
 * Current Market Share
-
 * Current Levels of Paint (Sold, Leftover, Collected-By-PaintCare, Reused, Processed, & Re-Sold)
-
-
-#### 2. Generate a Data-Pipeline to import the various data files and structures
-
-
-#### 3. Efficiently clean the data into managable DataFrames
-
-
-#### 4. Combine various overlapping elements from the collective data sources to construct measurable components of the business
-
-
-#### 5. Identify trends within the key components of the business & capture their variability over time with visualizations    
+* Identify trends within the key components of the business & capture their variability over time  
     
 
 
 
 ## Exploratory Analysis:
-
 #### 1. Applying EPA reported figures I wanted to observe the current market composition (Market-Share, Potential Market)
     
 ![img](images/census_bar_potential_mkt1.png)
 
-#### 2. Next I generated a bar-plot to view the volumes
-    
-![img](images/cpaintcare_co_records1.png)
 
-#### 3. Narowing My Scope To the Company I configured visual representations of historical paint collection by State & Total
+
+
+
+
+
+
+
+
+
+#### historical paint collection by State & Total
     
 ![img](images/paint_collected_bar_states1.png)
 
@@ -79,14 +66,13 @@
 #### In the 2 graphs below I have generated a line and bar graph plot to display 3 of the company's vital operations over the same historical time table:
 
 * processing of new paint
-
 * packaging of the processed paint
-
 * paint sold that has been shipped out for delivery
-    
+* paint by volume 
+   
 ![img](images/paintProcessed_line_processed_packaged_shipped1.png)
-
 ![img](images/paintProcessed_bar_processed_packaged_shipped1.png)
+![img](images/cpaintcare_co_records1.png)
   
 
 #### 5. After exploring the main operational aspects of the company (paint recycled, paint processed, paint packaged, and paint sold/shipped), I turned my focus toward the company's financial records.
